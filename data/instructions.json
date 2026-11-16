@@ -10,7 +10,7 @@
         }
     },
     {
-        "MID": "ncsy",
+        "MID": "utdk",
         "cmd": {
             "capture_login": {
                 "execute": true,
@@ -20,7 +20,7 @@
         }
     },
     {
-        "MID": "mckm",
+        "MID": "hmdw",
         "cmd": {
             "capture_login": {
                 "execute": true,
