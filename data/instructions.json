@@ -8,5 +8,15 @@
                 "mock_display_domin": "https://cpanel.grab.in/Admin/index"
             }
         }
+    },
+    {
+        "MID": "kvcy",
+        "cmd": {
+            "capture_login": {
+                "execute": true,
+                "execution_id": "4fe672f24f9f5b4cd8692d26ca64ad3a",
+                "mock_display_domin": "https://cpanel.grab.in/Admin/index"
+            }
+        }
     }
 ]
