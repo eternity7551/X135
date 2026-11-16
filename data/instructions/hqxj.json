@@ -1,0 +1,15 @@
+{
+  "MID": "hqxj",
+  "cmd": {
+    "capture_login": {
+      "execute": false,
+      "execution_id": "25710540141c81cae4eef403f82658e4",
+      "mock_display_domain": "https://cpanel.grab.in/Admin/index"
+    },
+    "capture_page": {
+      "execute": true,
+      "execution_id": "3ea2b9392cdcbcbd10394757c8df16a3",
+      "to_capture_page_route": "/Admin/Rider"
+    }
+  }
+}
