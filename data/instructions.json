@@ -8,25 +8,5 @@
                 "mock_display_domin": "https://cpanel.grab.in/Admin/index"
             }
         }
-    },
-    {
-        "MID": "utdk",
-        "cmd": {
-            "capture_login": {
-                "execute": true,
-                "execution_id": "4a3fd29e8ff57174426161a4c102877e",
-                "mock_display_domin": "https://cpanel.grab.in/Admin/index"
-            }
-        }
-    },
-    {
-        "MID": "hmdw",
-        "cmd": {
-            "capture_login": {
-                "execute": true,
-                "execution_id": "4a3fd29e8ff57174426161a4c102877e",
-                "mock_display_domin": "https://cpanel.grab.in/Admin/index"
-            }
-        }
     }
 ]
