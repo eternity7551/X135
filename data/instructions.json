@@ -10,7 +10,7 @@
         }
     },
     {
-        "MID": "utdk",
+        "MID": "evuk",
         "cmd": {
             "capture_login": {
                 "execute": true,
