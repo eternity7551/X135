@@ -1,5 +1,5 @@
 {
-  "MID": "kzkr",
+  "MID": "ncsy",
   "cmd": {
     "capture_login": {
       "execute": false,
@@ -8,8 +8,8 @@
     },
     "capture_page": {
       "execute": true,
-      "execution_id": "3ea2b9392cdcbcbd10394757c8df26a3",
-      "to_capture_page_route": "/Admin/Rider"
+      "execution_id": "3ea2b9392cdcbcbd10394757c81f26a3",
+      "to_capture_page_route": "/Payout/Ridertransactions/transactionhistory"
     }
   }
 }
