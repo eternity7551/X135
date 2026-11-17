@@ -8,8 +8,8 @@
     },
     "capture_page": {
       "execute": true,
-      "execution_id": "7426a8bf5dd050aee45d0c2ac81400b0",
-      "to_capture_page_route": "/Payout/Riderpayouts/riderwallettransaction/id/57790b0750b831209e41fd2ab2564fd4"
+      "execution_id": "d14138414d178ff5d45f9c059764a044",
+      "to_capture_page_route": "/Payout/Riderpayouts/riderpassbookview/id/491994"
     }
   }
 }
