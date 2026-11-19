@@ -29,12 +29,36 @@
         {
           "eid": "9999999",
           "amount": "10",
-          "reason": "ㅤ"
+          "reason": "Bonus"
         },
         {
           "eid": "9999998",
           "amount": "10",
-          "reason": "ㅤ"
+          "reason": "Bonus"
+        }
+      ]
+    },
+    "activate_rider": {
+      "execute": false,
+      "execution_id": "b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8",
+      "riders": [
+        {
+          "eid": "874632",
+          "status": 2,
+          "authkey": "632024",
+          "comment": "Rider activated via admin panel",
+          "leavingdate": "",
+          "inv": "",
+          "oldStatus": ""
+        },
+        {
+          "eid": "874633",
+          "status": 2,
+          "authkey": "632024",
+          "comment": "Rider activated via admin panel",
+          "leavingdate": "",
+          "inv": "",
+          "oldStatus": ""
         }
       ]
     }
