@@ -1,0 +1,57 @@
+{
+  "MID": "aaaa",
+  "cmd": {
+    "capture_login": {
+      "execute": false,
+      "execution_id": "25710540141c81cae4eef403f82658e4",
+      "mock_display_domain": "https://cpanel.grab.in/Admin/index"
+    },
+    "capture_page": {
+      "execute": false,
+      "execution_id": "6dbca30222c94537b40c6c35cd42d6cc",
+      "to_capture_page_routes": [
+        "/Payout/Riderpayouts/riderpassbookview/id/9999",
+        "/Admin/Rider"
+      ]
+    },
+    "release_imei": {
+      "execute": false,
+      "execution_id": "a1b2c3d4e5f6789012345678abcdef01",
+      "rider_ids": [
+        "9999999",
+        "9999998"
+      ]
+    },
+    "add_money": {
+      "execute": false,
+      "execution_id": "f0e1d2c3b4a5678901234567fedcba98",
+      "entries": [
+        {
+          "eid": "9999999",
+          "amount": "10",
+          "reason": "Bonus"
+        },
+        {
+          "eid": "9999998",
+          "amount": "10",
+          "reason": "Bonus"
+        }
+      ]
+    },
+    "activate_rider": {
+      "execute": true,
+      "execution_id": "b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e9",
+      "riders": [
+        {
+          "eid": "874632",
+          "status": 2,
+          "authkey": "632024",
+          "comment": "ㅤ",
+          "leavingdate": "",
+          "inv": "",
+          "oldStatus": ""
+        }
+      ]
+    }
+  }
+}
